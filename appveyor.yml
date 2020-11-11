@@ -22,12 +22,7 @@ install:
 
 build_script:
   - npm test
-  - npm run prebuild-node
-  - npm run prebuild-node-ia32
   - npm run prebuild-electron
-  - npm run prebuild-electron-ia32
-  - npm run prebuild-electron-arm64
-  - if defined APPVEYOR_REPO_TAG_NAME (npm run upload)
 
 test: off
 deploy: off

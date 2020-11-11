@@ -9,6 +9,10 @@ environment:
 
 cache:
   - node_modules
+  
+artifacts:
+- path: '**\keytar-v7.0.0-electron-v85-win32-x64.tar.gz'
+  name: Prebuilds
 
 branches:
   only:
